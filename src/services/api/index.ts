@@ -19,9 +19,9 @@ export class Api {
       baseURL: BASE_URL,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
       },
-      timeout: 60 * 1000
+      timeout: 60 * 1000,
     });
   }
 
@@ -38,7 +38,7 @@ export class Api {
   async post<T>(url: string, payload?: object) {
     const res = await this.handleResponse<T>(this.axios.post, {
       url,
-      payload
+      payload,
     });
     return res;
   }
@@ -46,7 +46,7 @@ export class Api {
   async delete<T>(url: string, payload?: object) {
     const res = await this.handleResponse<T>(this.axios.delete, {
       url,
-      payload
+      payload,
     });
     return res;
   }
