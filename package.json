@@ -6,7 +6,7 @@
     "test": "jest",
     "build": "next build ./src",
     "start": "cross-env NODE_ENV=production node ./server -p $PORT",
-    "lint": "tslint **/*.ts{,x}",
+    "lint": "tslint ./src/*.ts{,x}",
     "tsc": "tsc -p ./src --noEmit",
     "export": "yarn build && next export"
   },
@@ -64,9 +64,9 @@
     "jest": "^24.9.0",
     "prettier": "^1.14.3",
     "redux-devtools-extension": "^2.13.8",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.15.0",
-    "tslint-react": "^3.6.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.2.0",
     "typescript": "latest"
   }
 }
