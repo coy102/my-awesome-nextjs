@@ -5,17 +5,17 @@ import { red } from '@material-ui/core/colors';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#f85888'
+      main: '#f85888',
     },
     secondary: {
-      main: '#9575cd'
+      main: '#9575cd',
     },
     error: {
-      main: red.A400
+      main: red.A400,
     },
     background: {
-      default: '#f3f3f3'
-    }
+      default: '#f3f3f3',
+    },
   },
   overrides: {
     MuiCard: {
@@ -24,17 +24,17 @@ const theme = createMuiTheme({
         borderRadius: 5,
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: 'rgba(0, 0, 0, 0.1)'
-      }
+        borderColor: 'rgba(0, 0, 0, 0.1)',
+      },
     },
     MuiBottomNavigation: {
       root: {
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: 'rgba(0, 0, 0, 0.1)'
-      }
-    }
-  }
+        borderColor: 'rgba(0, 0, 0, 0.1)',
+      },
+    },
+  },
 });
 
 export default theme;
